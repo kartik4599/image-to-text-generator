@@ -40,3 +40,62 @@
 .read-the-docs {
   color: #888;
 }
+
+.imagecontainer {
+  height: 350px;
+  width: 550px;
+  border: 2px dashed grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  position: relative;
+}
+
+.imagecontainer__active {
+  height: 350px;
+  width: 550px;
+  border: 1px dashed teal;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  position: relative;
+}
+
+.imageloading {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: grey;
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textarea {
+  width: 550px;
+  height: 300px;
+}
+
+.image {
+  height: 100px;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
